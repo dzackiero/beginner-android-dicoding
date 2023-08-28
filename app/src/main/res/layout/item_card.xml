@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/content_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CornerRounded"
+            tools:src="@drawable/poster2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/content_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/content_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ahsoka (2023)" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/content_genre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/content_title"
+            app:layout_constraintTop_toBottomOf="@+id/content_title"
+            tools:text="Action, Adventure, Sci-fi, Drama" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/content_overview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLines="4"
+
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="@+id/content_genre"
+            app:layout_constraintTop_toBottomOf="@+id/content_genre"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis pharetra arcu. Curabitur venenatis egestas auctor. In sit amet pellentesque sem, vel sollicitudin sapien. Morbi non interdum mauris, quis volutpat libero. Donec ornare sit amet elit a imperdiet. Sed nibh metus, scelerisque eu tempor vel, facilisis posuere nulla. Proin dictum, purus nec fermentum fermentum, ex lectus ullamcorper nunc, a vestibulum diam ex vitae ex. Aliquam aliquet finibus tristique." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

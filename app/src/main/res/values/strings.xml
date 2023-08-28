@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Beginner Project Dicoding</string>
+    <string name="app_name">Movies Gallery</string>
+    <string name="about_page">About Page</string>
+    <string name="trailer">Trailer</string>
+    <string name="share">Share</string>
+    <string name="overview">Overview</string>
+    <string name="genre">Genre</string>
+    <string name="rating">Rating</string>
+    <string name="nama_lengkap">Muhammad Dzaky Nashshar</string>
+    <string name="email">dzakynashshar@gmail.com</string>
 </resources>
